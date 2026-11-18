@@ -1,0 +1,13 @@
+services:
+  estateiq:
+    build: .
+    container_name: estateiq
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      - estateiq_data:/app/data
+    restart: unless-stopped
+volumes:
+  estateiq_data:
