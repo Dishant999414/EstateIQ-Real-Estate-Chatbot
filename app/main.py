@@ -246,7 +246,7 @@ def call_model(question, contexts, history):
                     "model": OPENROUTER_MODEL,
                     "messages": messages,
                     "temperature": 0.2,
-                    "max_tokens": 3000,
+                    "max_tokens": 6000,
                     "reasoning": {"effort": "minimal"}
                 },
                 timeout=90
