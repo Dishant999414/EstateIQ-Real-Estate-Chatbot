@@ -201,7 +201,7 @@ def call_model(question, contexts, history):
 
     context_text = "\n\n".join(
         f"[{c['company']} | {c['title']} | {c['url']}]\n{c['content'][:1800]}"
-        for c in contexts[:3]
+        for c in contexts[:6]
     )
 
     messages = [{
